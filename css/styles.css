@@ -1,0 +1,233 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 50px 10%;
+    background-color: whitesmoke;
+}
+
+h1 {
+    font-size: 48px;
+    color: #2E5F87;
+    text-align: center;
+}
+
+h2 {
+    font-size: 16px;
+    color: #2E5F87;
+    text-align: center;
+    font-style: italic;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border-right: 3px solid whitesmoke;
+    border-bottom: 3px solid whitesmoke;
+    text-align: center;
+    padding: 15px;
+}
+
+th {
+    background-color: #2E5F87;
+    padding: 15px;
+    color: whitesmoke;
+}
+
+.resposta {
+    background-color: rgb(203, 240, 255);
+    font-weight: bold;
+}
+
+.positiu {
+    color: green;
+}
+
+.negativa {
+    color: red;
+}
+
+.tier1 {
+    background-color: #B3D4F0;
+}
+
+.tier2 {
+    background-color: #80B9E5;
+}
+
+.tier3 {
+    background-color: #4682B4;
+}
+
+.level1 {
+    background-color: skyblue;
+}
+
+select {
+    width: 90%;
+    padding: 5px;
+    font-size: 14px;
+}
+
+input {
+    width: 40px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.human {
+    background-color: lightgreen;
+}
+
+.meca {
+    background-color: lightskyblue;
+}
+
+.kaelesh {
+    background-color: plum;
+}
+
+.rock {
+    background-color: lightcoral;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+}
+
+/* Estils per a dispositius amb pantalla petita */
+@media (max-width: 768px) {
+    body {
+        margin: 30px 5%;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .column {
+        padding: 10px 0;
+    }
+
+    select {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    input {
+        width: 60px;
+        font-size: 12px;
+    }
+
+    #result {
+        font-size: 14px;
+    }
+}
+
+/* Estils per a dispositius molt petits (mòbils petits) */
+@media (max-width: 480px) {
+    body {
+        margin: 20px 5%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    select {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    input {
+        width: 50px;
+        font-size: 12px;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .column {
+        padding: 10px 0;
+    }
+}
+
+/* Estils per a pantalles grans (més de 1200px) */
+@media (min-width: 1200px) {
+    body {
+        margin: 50px 10%;
+    }
+
+    table {
+        font-size: 18px;
+    }
+
+    th, td {
+        padding: 20px;
+    }
+
+    .container {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .column {
+        padding: 10px;
+    }
+
+    select {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    input {
+        width: 40px;
+        font-size: 14px;
+    }
+}
