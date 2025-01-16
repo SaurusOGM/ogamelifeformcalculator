@@ -1,30 +1,42 @@
 body {
     font-family: Arial, sans-serif;
     margin: 50px 10%;
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 h1 {
     font-size: 48px;
-    color: #2E5F87;
+    color: midnightblue;
     text-align: center;
 }
 
 h2 {
-    font-size: 16px;
-    color: #2E5F87;
+    font-size: 20px;
+    color: midnightblue;
     text-align: center;
     font-style: italic;
 }
+p {
+    text-align: center;
+    max-width: 350px;
+    background-color: rgb(219, 238, 255);
+    padding: 15px;
+    border-radius: 10px;
 
+}
+.important {
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+}
 table {
     width: 100%;
     border-collapse: collapse;
 }
 
 th, td {
-    border-right: 3px solid whitesmoke;
-    border-bottom: 3px solid whitesmoke;
+    border: 5px solid rgb(219, 238, 255);
+    border-radius: 15px;
     text-align: center;
     padding: 15px;
 }
@@ -36,7 +48,7 @@ th {
 }
 
 .resposta {
-    background-color: rgb(203, 240, 255);
+    background-color: rgb(222, 255, 222);
     font-weight: bold;
 }
 
@@ -103,11 +115,33 @@ input {
     align-items: flex-start;
     gap: 10px;
     padding: 10px;
+    background-color: rgb(219, 238, 255);
+    border-radius: 15px;
+    margin: 15px 0;
 }
 
 .column {
     flex: 1;
     padding: 10px;
+}
+button {
+    background-color: midnightblue;
+    color: white;
+    border: 1px solid midnightblue;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+button:hover {
+    background-color: white;
+    color: midnightblue;
+}
+.container-all-purpose {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
 }
 
 /* Estils per a dispositius amb pantalla petita */
