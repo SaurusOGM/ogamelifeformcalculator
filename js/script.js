@@ -436,3 +436,44 @@ document.addEventListener('DOMContentLoaded', () => {
         // Inicialitzar els resultats inicials
         updateResults();
 });
+
+document.getElementById('selectHuman').addEventListener('click', () => {
+    const selects = document.querySelectorAll('select.option'); // Selecciona totes les etiquetes <select> amb la classe "option"
+    selects.forEach(select => {
+        if (select.options.length > 1) { // Comprova que hi ha almenys dues opcions
+            select.selectedIndex = 1;   // Selecciona la segona opció (índex 1)
+            const event = new Event('change'); // Crea un esdeveniment 'change' per activar la lògica vinculada
+            select.dispatchEvent(event);      // Desencadena l'esdeveniment 'change'
+        }
+    });
+});
+document.getElementById('selectMeca').addEventListener('click', () => {
+    const selects = document.querySelectorAll('select.option'); // Selecciona totes les etiquetes <select> amb la classe "option"
+    selects.forEach(select => {
+        if (select.options.length > 1) { // Comprova que hi ha almenys dues opcions
+            select.selectedIndex = 2;   // Selecciona la segona opció (índex 1)
+            const event = new Event('change'); // Crea un esdeveniment 'change' per activar la lògica vinculada
+            select.dispatchEvent(event);      // Desencadena l'esdeveniment 'change'
+        }
+    });
+});
+document.getElementById('selectKaelesh').addEventListener('click', () => {
+    const selects = document.querySelectorAll('select.option'); // Selecciona totes les etiquetes <select> amb la classe "option"
+    selects.forEach(select => {
+        if (select.options.length > 1) { // Comprova que hi ha almenys dues opcions
+            select.selectedIndex = 3;   // Selecciona la segona opció (índex 1)
+            const event = new Event('change'); // Crea un esdeveniment 'change' per activar la lògica vinculada
+            select.dispatchEvent(event);      // Desencadena l'esdeveniment 'change'
+        }
+    });
+});
+document.getElementById('selectRocktal').addEventListener('click', () => {
+    const selects = document.querySelectorAll('select.option'); // Selecciona totes les etiquetes <select> amb la classe "option"
+    selects.forEach(select => {
+        if (select.options.length > 1) { // Comprova que hi ha almenys dues opcions
+            select.selectedIndex = 4;   // Selecciona la segona opció (índex 1)
+            const event = new Event('change'); // Crea un esdeveniment 'change' per activar la lògica vinculada
+            select.dispatchEvent(event);      // Desencadena l'esdeveniment 'change'
+        }
+    });
+});
