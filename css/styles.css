@@ -97,16 +97,64 @@ input {
     background-color: lightgreen;
 }
 
+#selectHuman {
+    background-color: lightgreen;
+    border: 1px solid lightgreen;
+    margin: 0 5px;
+}
+
+#selectHuman:hover {
+    background-color: white;
+    color: lightgreen;
+    border: 1px solid lightgreen;
+}
+
 .meca {
     background-color: lightskyblue;
+}
+
+#selectMeca {
+    background-color: lightskyblue;
+    border: 1px solid lightskyblue;
+    margin: 0 5px;
+}
+
+#selectMeca:hover {
+    background-color: white;
+    color: lightskyblue;
+    border: 1px solid lightskyblue;
 }
 
 .kaelesh {
     background-color: plum;
 }
 
+#selectKaelesh {
+    background-color: plum;
+    border: 1px solid plum;
+    margin: 0 5px;
+}
+
+#selectKaelesh:hover {
+    background-color: white;
+    color: plum;
+    border: 1px solid plum;
+}
+
 .rock {
     background-color: lightcoral;
+}
+
+#selectRocktal {
+    background-color: lightcoral;
+    border: 1px solid lightcoral;
+    margin: 0 5px;
+}
+
+#selectRocktal:hover {
+    background-color: white;
+    color: lightcoral;
+    border: 1px solid lightcoral;
 }
 
 .container {
